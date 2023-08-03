@@ -4,20 +4,26 @@ import org.springframework.stereotype.Service;
 import org.springframework.util.CollectionUtils;
 
 import java.util.*;
+import java.util.stream.IntStream;
 
 @Service
 public class SumService {
     public List<Integer> twoSum(List<Integer> integerList,Integer target) {
-    Map<Integer,Integer> integerMap = new HashMap();
-    int i =0;
-        for (Integer num : integerList){
-            if(integerMap.containsKey(target-num)){
-                return new ArrayList<>(List.of(integerMap.get(target-num),i));
-            }
-            integerMap.put(num,i);
-            i++;
-        }
-        return null;
+        Map<Integer, Integer> integerMap = new HashMap<>();
+
+        return IntStream.range(0, integerList.size())
+                .mapToObj(i -> {
+                    int num = integerList.get(i);
+                    int complement = target - num;
+                    if (integerMap.containsKey(complement)) {
+                        return List.of(integerMap.get(complement), i);
+                    }
+                    integerMap.put(num, i);
+                    return null;
+                })
+                .filter(Objects::nonNull)
+                .findFirst()
+                .orElse(null);
     }
 
     public int[] sortedTwoSum(int[] integerList, int target) {

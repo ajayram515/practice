@@ -11,12 +11,10 @@ public class DuplicatesService {
 
     public Boolean checkDuplicates(List<Integer> list) {
         Set<Integer> deDuplicatedList= new HashSet<>();
-        for(Integer number : list){
-            if(deDuplicatedList.contains(number)){
-                return true;
-            }
+        return list.stream().anyMatch(number -> {
+            boolean contains = deDuplicatedList.contains(number);
             deDuplicatedList.add(number);
-        }
-        return false;
+            return contains;
+        });
     }
 }
