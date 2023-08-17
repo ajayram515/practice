@@ -1,4 +1,4 @@
-package com.ajay.practice.controller;
+package com.ajay.practice.controller.swigito;
 
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.RequestMapping;

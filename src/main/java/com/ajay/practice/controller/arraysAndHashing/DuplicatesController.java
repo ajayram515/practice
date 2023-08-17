@@ -1,4 +1,4 @@
-package com.ajay.practice.controllers.arraysAndHashing;
+package com.ajay.practice.controller.arraysAndHashing;
 
 import com.ajay.practice.service.DuplicatesService;
 import org.springframework.beans.factory.annotation.Autowired;

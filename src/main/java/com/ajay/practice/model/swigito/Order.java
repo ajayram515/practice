@@ -1,4 +1,4 @@
-package com.ajay.practice.model;
+package com.ajay.practice.model.swigito;
 
 import lombok.Data;
 

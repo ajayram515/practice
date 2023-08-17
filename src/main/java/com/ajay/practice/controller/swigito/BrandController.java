@@ -1,11 +1,9 @@
-package com.ajay.practice.controller;
+package com.ajay.practice.controller.swigito;
 
-import com.ajay.practice.model.Brand;
+import com.ajay.practice.model.swigito.Brand;
 import com.ajay.practice.service.BrandService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;
-
-import java.util.List;
 
 @RestController
 @AllArgsConstructor

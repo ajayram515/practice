@@ -1,7 +1,7 @@
-package com.ajay.practice.controller;
+package com.ajay.practice.controller.swigito;
 
-import com.ajay.practice.model.Order;
-import com.ajay.practice.model.Status;
+import com.ajay.practice.model.swigito.Order;
+import com.ajay.practice.model.swigito.Status;
 import com.ajay.practice.service.OrderService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.*;

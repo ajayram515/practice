@@ -1,7 +1,6 @@
-package com.ajay.practice.controller;
+package com.ajay.practice.controller.swigito;
 
-import com.ajay.practice.model.Brand;
-import com.ajay.practice.model.Item;
+import com.ajay.practice.model.swigito.Item;
 import com.ajay.practice.service.ItemService;
 import lombok.AllArgsConstructor;
 import org.springframework.web.bind.annotation.PostMapping;

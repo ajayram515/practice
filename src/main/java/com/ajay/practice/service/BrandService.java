@@ -1,6 +1,6 @@
 package com.ajay.practice.service;
 
-import com.ajay.practice.model.Brand;
+import com.ajay.practice.model.swigito.Brand;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

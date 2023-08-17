@@ -1,10 +1,8 @@
-package com.ajay.practice.controller;
+package com.ajay.practice.controller.swigito;
 
-import com.ajay.practice.model.Brand;
-import com.ajay.practice.model.Menu;
+import com.ajay.practice.model.swigito.Menu;
 import com.ajay.practice.service.MenuService;
 import lombok.AllArgsConstructor;
-import org.apache.kafka.common.protocol.types.Field;
 import org.springframework.web.bind.annotation.*;
 
 @RestController

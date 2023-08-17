@@ -1,8 +1,7 @@
 package com.ajay.practice.service;
 
-import com.ajay.practice.model.Brand;
-import com.ajay.practice.model.Order;
-import com.ajay.practice.model.Status;
+import com.ajay.practice.model.swigito.Order;
+import com.ajay.practice.model.swigito.Status;
 import org.springframework.stereotype.Service;
 
 import java.util.HashMap;

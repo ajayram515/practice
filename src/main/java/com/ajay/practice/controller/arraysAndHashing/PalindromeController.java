@@ -1,4 +1,4 @@
-package com.ajay.practice.controllers.arraysAndHashing;
+package com.ajay.practice.controller.arraysAndHashing;
 
 import com.ajay.practice.service.PalindromeService;
 import lombok.AllArgsConstructor;
